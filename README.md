@@ -1,4 +1,4 @@
-# Aravind – Online Resume
+# Aravind Chandra Sekaran – Online Resume
 
 Static resume site, hosted on GitHub Pages: https://arav0710.github.io/myresume/
 
