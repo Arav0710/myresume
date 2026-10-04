@@ -1,12 +1,20 @@
 // Edit this file to update your resume; the page renders itself from this data.
+// Text style: simple technical English. Short sentences. One idea each. Active voice.
 window.RESUME = {
   name: "Aravind Chandra Sekaran",
   title: "Staff / Principal Engineer · Technical Lead",
-  tagline: "Financial & Transaction Systems · Distributed Platforms on AWS · AI-Enabled Delivery",
+  tagline: "I build safe, fast systems for money and data.",
   location: "Chennai, India",
   summary: [
-    "Senior engineer with 13+ years designing and building enterprise-scale, distributed systems, with deep, hands-on experience in financial and transaction-processing platforms — core banking (transaction processing, disbursement, reconciliation, credit-bureau integration) and high-volume payroll. Currently a Lead Consultant at Thoughtworks, where I recently architected a high-throughput aggregation service on AWS handling engagement and lead-management metrics at production scale.",
-    "Strong across the full software development lifecycle in Agile teams — design, development, testing, deployment, and production support — working in Python, JavaScript, and C#/.NET with REST APIs, relational and NoSQL data stores, and event-driven, distributed architectures. In 2025 I founded and led an AI-first delivery experiment, applying AI/LLM tooling to workflow automation, categorization, and operational efficiency, achieving ~60% faster delivery against team baselines."
+    "I am a senior engineer with 13+ years of experience. I build large, distributed systems. I know financial systems well: core banking, payroll, and credit-bureau checks.",
+    "I am a Lead Consultant at Thoughtworks. I designed a fast aggregation service on AWS. It counts engagement and lead data at production scale.",
+    "I work in Agile teams across the full software life cycle. I use Python, JavaScript, and C#/.NET. In 2025, I started an AI-first delivery team. It delivers about 60% faster than normal teams."
+  ],
+  stats: [
+    { value: "13+", label: "years in software" },
+    { value: "~60%", label: "faster delivery with AI-first team" },
+    { value: "300%", label: "faster dashboard load" },
+    { value: "7", label: "companies" }
   ],
   contact: {
     email: "caravind07@gmail.com",
@@ -14,73 +22,104 @@ window.RESUME = {
     linkedin: "https://www.linkedin.com/in/aravind-8105877020",
     github: "https://github.com/arav0710"
   },
+  schematic: {
+    title: "How the AWS aggregation service works",
+    note: "Simplified view of the service I designed at Thoughtworks (2024–2025).",
+    steps: [
+      { name: "Engagement events", detail: "Profile views, document downloads, badge scans, lead capture" },
+      { name: "Event-driven REST services", detail: "Receive each event. Fault-tolerant pipeline" },
+      { name: "DynamoDB", detail: "Removes duplicate events" },
+      { name: "Delta aggregation", detail: "Adds or subtracts the change (increment / decrement)" },
+      { name: "DocumentDB", detail: "One data model for each collection" },
+      { name: "Metrics for exhibitors", detail: "Engagement and lead numbers" }
+    ]
+  },
   experience: [
     {
       role: "Lead Consultant", company: "Thoughtworks", period: "Aug 2022 – Present", location: "Chennai, India",
       groups: [
         { heading: "Distributed Aggregation Service on AWS (2024–2025)", points: [
-          "Architected and delivered a high-throughput aggregation service on AWS for an events/exhibitions platform, processing exhibitor engagement metrics (profile views, document downloads, badge scans, lead capture) at production scale.",
-          "Designed a per-collection DocumentDB data model with deduplication in DynamoDB and configurable increment / decrement aggregation (delta-based), explicitly documenting cost, latency, and consistency trade-offs across multiple design iterations.",
-          "Built event-driven REST services and a fault-tolerant pipeline, supported by a structured, versioned design process (requirements, challenge logs, changelog) for reliable enterprise delivery."
+          "Designed and delivered a fast aggregation service on AWS for an events and exhibitions platform.",
+          "The service counts exhibitor engagement: profile views, document downloads, badge scans, and lead capture.",
+          "Created a DocumentDB data model for each collection. Used DynamoDB to remove duplicate events.",
+          "Made the aggregation configurable. It adds or subtracts changes (delta-based).",
+          "Wrote down the cost, speed, and consistency trade-offs in each design version.",
+          "Built event-driven REST services and a fault-tolerant pipeline.",
+          "Used a versioned design process: requirements, challenge logs, and a changelog."
         ]},
         { heading: "AI-First Delivery Experiment (2025–Present)", points: [
-          "Founded and led an AI-first engineering team, embedding AI tooling across the full delivery lifecycle — research, analysis, planning, development, and automated testing — to reduce manual operational work.",
-          "Achieved ~60% faster delivery vs. traditional team baselines; applied AI/LLM tooling to workflow automation, categorization, and AI-driven test generation."
+          "Started and led an AI-first engineering team.",
+          "Used AI tools in all delivery steps: research, analysis, planning, development, and testing.",
+          "Delivered about 60% faster than normal team baselines.",
+          "Used AI and LLM tools for workflow automation, categorization, and test generation."
         ]},
         { heading: "Core Responsibilities", points: [
-          "Led solution design for enterprise clients, translating business requirements and user stories into technical designs and shippable software meeting security, performance, reliability, maintainability, and testing standards.",
-          "Influenced coding standards, architectural patterns, and engineering best practices; mentored engineers and partnered with product, operations, and stakeholders to solve complex delivery problems."
+          "Led solution design for enterprise clients.",
+          "Changed business needs and user stories into technical designs.",
+          "Delivered software that meets security, performance, reliability, and test standards.",
+          "Set coding standards and architecture patterns.",
+          "Mentored engineers. Worked with product teams, operations, and stakeholders."
         ]}
       ]
     },
     {
       role: "Lead Application Developer", company: "ADP India", period: "Jul 2019 – Aug 2022", location: "Chennai, India",
       points: [
-        "Led development of enterprise-scale HR and payroll platforms — high-volume financial data movement and transaction processing — owning technical design from architecture through delivery and production support.",
-        "Drove adoption of test automation, CI/CD, and microservices patterns across the team."
+        "Led development of large HR and payroll platforms.",
+        "Owned the technical design from architecture to production support.",
+        "The platforms moved large amounts of financial data.",
+        "Introduced test automation, CI/CD, and microservices to the team."
       ]
     },
     {
       role: "Senior Software Engineer", company: "CES", period: "Mar 2018 – Jun 2019", location: "Chennai, India",
-      points: ["Delivered enterprise application features across the full SDLC within an Agile delivery team."]
+      points: ["Delivered enterprise application features in an Agile team, from design to release."]
     },
     {
       role: "Senior Project Engineer", company: "Wipro Limited", period: "Apr 2017 – Mar 2018", location: "Bengaluru, India",
       points: [
-        "Built Medtronic application services — REST WebAPIs for authentication, registration, log collection, and content distribution.",
-        "Designed database entities, implemented API controllers, and wrote unit, integration, and verification test suites; used temporal tables for database versioning."
+        "Built services for the Medtronic application.",
+        "Created REST WebAPIs for sign-in, registration, log collection, and content distribution.",
+        "Designed database entities. Wrote API controllers.",
+        "Wrote unit, integration, and verification tests.",
+        "Used temporal tables for database versions."
       ],
       stack: ".NET, C#, ASP.NET MVC WebAPI, Azure Storage, SQL Server, MongoDB, MS-Test, NUnit"
     },
     {
       role: "Senior Developer", company: "HealthAsyst", period: "Jan 2016 – Feb 2017", location: "Bengaluru, India",
       points: [
-        "Developed the authentication module and dashboard configuration for Sunrise Operation Monitor, a real-time analytics tool for patient and provider load in clinical facilities.",
-        "Optimised dashboard load time by 300% through frontend and data-pipeline improvements; served as Scrum Master, leading standups, sprint delivery, and retrospectives."
+        "Built the sign-in module and dashboard setup for Sunrise Operation Monitor.",
+        "Sunrise Operation Monitor shows patient and provider load in clinics in real time.",
+        "Made the dashboard load 300% faster. Improved the frontend and the data pipeline.",
+        "Worked as Scrum Master. Led stand-ups, sprints, and retrospectives."
       ]
     },
     {
       role: "Senior Software Engineer", company: "Craft Silicon Ltd", period: "Apr 2013 – Dec 2015", location: "Bengaluru, India",
       points: [
-        "Developed core banking software (BR.net) for the microfinance sector, covering transaction processing, loan disbursement, customer management, and financial reporting.",
-        "Built internal and third-party APIs for credit-bureau integration and customer credit-history lookup, supporting loan-processing decisions.",
-        "Acted as both Scrum Master and Product Owner for the Credit Bureau integration; ran sprint ceremonies and maintained product documentation."
+        "Built core banking software (BR.net) for microfinance.",
+        "The software handles transactions, loan payout, customers, and financial reports.",
+        "Built internal and third-party APIs for credit-bureau checks and credit-history lookup.",
+        "These APIs help loan decisions.",
+        "Worked as Scrum Master and Product Owner for the Credit Bureau integration.",
+        "Ran sprint meetings. Kept the product documents."
       ],
       stack: "ASP.NET, C#, JavaScript, jQuery, HighCharts, SQL Server, Oracle, TFS"
     },
     {
       role: "Software Engineer", company: "SunSmart Technologies Pvt. Ltd", period: "Dec 2011 – Apr 2013", location: "Chennai, India",
-      points: ["Built features for CCMS CRM (bulk mailing, TAT integration, call-record history) and supported three major enterprise clients."]
+      points: ["Built features for CCMS CRM: bulk mailing, TAT integration, and call-record history.", "Supported three large enterprise clients."]
     }
   ],
   skills: [
-    { label: "Domain", items: "Financial & transaction systems (core banking, payroll, payments, reconciliation, credit-bureau integration); revenue-cycle workflows; enterprise-scale delivery" },
-    { label: "Languages", items: "Python, JavaScript, C# / .NET, SQL" },
-    { label: "Cloud & Infra", items: "AWS (DocumentDB, DynamoDB, ElastiCache / Redis), Azure, CI/CD pipelines, Unix / Linux" },
-    { label: "Data", items: "Relational design with SQL Server & Oracle; NoSQL with MongoDB, DynamoDB, DocumentDB" },
-    { label: "Architecture", items: "Distributed systems, microservices, event-driven design, REST APIs, OOP, clean / hexagonal architecture" },
-    { label: "Practices", items: "Full SDLC, Agile / Scrum (Scrum Master & Product Owner), CI/CD, test automation, Git, effort estimation" },
-    { label: "AI / ML", items: "AI-first delivery, agentic coding assistants, LLM-powered analysis & automation, AI test generation" }
+    { label: "Domain", items: ["Core banking", "Payroll", "Payments", "Reconciliation", "Credit-bureau integration", "Revenue-cycle workflows"] },
+    { label: "Languages", items: ["Python", "JavaScript", "C# / .NET", "SQL"] },
+    { label: "Cloud & Infra", items: ["AWS", "DocumentDB", "DynamoDB", "ElastiCache / Redis", "Azure", "CI/CD", "Unix / Linux"] },
+    { label: "Data", items: ["SQL Server", "Oracle", "MongoDB", "DynamoDB", "DocumentDB"] },
+    { label: "Architecture", items: ["Distributed systems", "Microservices", "Event-driven design", "REST APIs", "OOP", "Clean / hexagonal"] },
+    { label: "Practices", items: ["Full SDLC", "Agile / Scrum", "Scrum Master", "Product Owner", "Test automation", "Git", "Effort estimation"] },
+    { label: "AI / ML", items: ["AI-first delivery", "Agentic coding assistants", "LLM automation", "AI test generation"] }
   ],
   education: [
     { degree: "BE, Computer Science", school: "PSG College of Technology", period: "2008 – 2011" },
